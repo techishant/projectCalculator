@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <table border="1" id="datasheet">
+        <tbody id = "data">
+
+        <tr>
+          <th>Project No.</th>
+          <th>Location</th>
+          <th>Order</th>
+          <th>Price</th>
+          <th>D%</th>
+          <th>Discount</th>
+          <th>Amount</th>
+          <th>Taxable Amount</th>
+          <th>GST</th>
+          <th>Net</th>
+          <th>Reqd. Amt.</th>
+          <th><button class="add_btn" onclick="createNewRow()">&plus;</button></th>
+        </tr>
+
+      </tbody>
+
+      <tbody id = "summary">
+        <tr>
+          <th colspan="5">Total</th>
+          <th><span></span></th>
+          <th><span></span></th>
+          <th><span></span></th>
+          <th><span></span></th>
+          <th><span></span></th>
+          <th colspan="2"><span></span></th>
+        </tr>
+        <tr>
+          <th colspan="10">Advance</th>
+          <th colspan="2"><input oninput="refresh(-1);" type="number"></th>
+        </tr>
+        <tr>
+          <th colspan="10">Net Required Amount</th>
+          <th colspan="2"><span></span></th>
+        </tr>
+      </tbody>
+
+      </table>
+
+      
+    </div>
+    <script src="scripts.js"></script>
+  </body>
+</html>
